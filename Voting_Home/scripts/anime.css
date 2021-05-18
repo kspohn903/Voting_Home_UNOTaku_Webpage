@@ -1,0 +1,270 @@
+
+body { /*Body*/
+background: #000000;
+/*background-image: url('images/BG.png');
+background-position: center;
+background-repeat: repeat-y;*/
+margin: 0px;
+padding: 0px;
+} 
+.none {
+	display: none;
+}
+.hidden {
+	visibility: hidden;
+}
+/*Links*/
+a:hover, a:active { color: #006600; } 
+a:link, a:visited { color: #000066; } 
+
+/*Table junk*/
+ td, th {
+text-align: left;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+#animeTable, #voterTable {
+border-collapse: collapse;
+width: 100%;
+}
+
+#animeTable th, #voterTable th {
+font-size: 1.5em;
+}
+
+#animeTable tr, #voterTable tr {
+border-bottom: 1px solid #ffffff;
+background-color: #aaaaaa;
+}
+
+#animeTable tr:hover, #voterTable tr:hover, #curVotes tr:hover {
+background-color: #888888;
+}
+#animeTable td, #voterTable td {
+padding-top: 5px;
+padding-bottom:5px;
+}
+
+#animeTable tr.previouslyWatched {
+	background-color: #aaaaff;
+	display: none;
+}
+
+#animeTable tr.previouslyWatched:hover {
+	background-color: #7777cc;
+}
+
+#animeTable tr.newlyAdded {
+	background-color: #ffffaa;
+}
+
+#animeTable tr.newlyAdded:hover {
+	background-color: #cccc77;
+}
+
+#animeTable tr.random {
+	background-color: #ffaaaa;
+}
+
+#animeTable tr.random:hover {
+	background-color: #cc7777;
+}
+
+#animeTable td.sectionHeader a {
+    display:block; 
+    position: relative;
+	top: -132px;
+}
+
+#animeTable td.jumperBar {
+	text-align: center;
+	font-weight: bold;
+}
+
+img { /*Misc controls, images*/
+border: none;
+}
+
+.sortable a { /*Sortable specifics*/
+text-decoration: none;
+}
+
+.sortable tr {
+border-bottom: 1px solid #ffffff;
+}
+
+/*Top Div*/
+#top a:link, #top a:visited { color: #aaaaff; } 
+#top a:hover, #top a:active { color: #aaffaa; }
+
+#top { 
+ background: #sa424c;
+ /*BG Image random assigned via header.php*/
+background-position: center;
+color: #ffffff;
+position:fixed;
+top:0;
+left: 0;
+width: 100%;
+height: 112px;
+clear: both;
+z-index: 10;
+}
+div > div#top { 
+position: fixed; width: 100%;
+}
+#topLeft { /*Top Left: Current vote list*/
+float: left;
+background: #000000;
+background: rgba(0,0,0,.5);
+}
+#topLeft td {
+padding-right: 0px;
+padding-top: 0px;
+color: #ffffff;
+}
+#topLeft img {
+height: 18px;
+width: 18px;
+}
+#topRight { /*Top Right: Links and information*/
+float: right;
+text-align: right;
+margin-right: 5px;
+}
+#lastTimeOnDBZ { /*Last time div*/
+border-color: #ffffff;
+border-width: 1px;
+border-style: solid;
+padding: 5px;
+background: #000000;
+color: #ffffff;
+position:fixed;
+top:233px;
+right: 0;
+width: 110px;
+}
+#lastTimeOnDBZ a {
+color: #aaaaff;
+}
+#lastTimeOnDBZ img {
+height: 18px;
+width: 18px;
+}
+
+#contentHolder { /*Main content holder*/
+/*min-width: 920px;*/
+padding-left: 60px;
+padding-right: 60px;
+}
+#content { /*Main content itself*/
+/*background: transparent;*/
+background: #AAAAAA;
+color: #000000;
+margin-top: 112px;
+/*width: 800px;
+min-width: 800px;*/
+margin-left: auto;
+margin-right: auto;
+}
+#animeTable img {
+height: 18px;
+width: 18px;
+cursor: pointer;
+}
+#SearchAnime { /*Search*/
+	background: black;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 16px;
+	height: 16px;
+	background-image: url('../images/magnifying-glass.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	text-indent: 16px;
+}
+#SearchAnime:hover {
+	width: 150px;
+	background-image: none;
+	text-indent: 0;
+} 
+#tblAnnouncement td {
+	vertical-align: top;
+	width: 50%;
+	text-align: center;
+}
+#login {
+  text-align: center;
+}
+.dropMenu a {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	font-weight: bold;
+	color: white !important;
+}
+.dropMenu, .dropMenu ul {
+	width: 125px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.dropMenu li {
+	display: inline-block;
+	height: 28px;
+	max-height: 28px;
+	width: 100%;
+	float: right;
+	padding: 0 25px 0 0;
+	background: #000000;
+	background: rgba(0,0,0,.5)
+}
+.dropMenu li:hover {
+	background: #888888;
+}
+.dropMenu li:hover ul {
+	display: block;
+}
+.dropMenu ul {
+	display: none;
+	position: relative;
+	top: -30px;
+	left: -125px;
+}
+marquee {
+	background: #ff0000; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ff0000 0%, #0000ff 50%, #00ff00 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff0000), color-stop(50%,#0000ff), color-stop(100%,#00ff00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #ff0000 0%,#0000ff 50%,#00ff00 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #ff0000 0%,#0000ff 50%,#00ff00 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #ff0000 0%,#0000ff 50%,#00ff00 100%); /* IE10+ */
+	background: linear-gradient(left,  #ff0000 0%,#0000ff 50%,#00ff00 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#00ff00',GradientType=1 ); /* IE6-9 */
+	font-size: 2em;
+	text-shadow:2px 2px 2px #FFFFFF;
+	-webkit-transform: rotate(-10deg); 
+	-moz-transform: rotate(-10deg);	
+	transform: skew(5deg,5deg);
+	-ms-transform: skew(5deg,5deg); /* IE 9 */
+	-webkit-transform: skew(5deg,5deg); /* Safari and Chrome */
+	-o-transform: skew(5deg,5deg); /* Opera */
+	-moz-transform: skew(5deg,5deg); /* Firefox */
+}
+marquee:hover {
+	background: #4c4c4c; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4c4c4c), color-stop(12%,#595959), color-stop(25%,#666666), color-stop(39%,#474747), color-stop(50%,#2c2c2c), color-stop(51%,#000000), color-stop(60%,#111111), color-stop(76%,#2b2b2b), color-stop(91%,#1c1c1c), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* IE10+ */
+	background: radial-gradient(center, ellipse cover, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	transform: skew(-5deg,-5deg);
+	-ms-transform: skew(-5deg,-5deg); /* IE 9 */
+	-webkit-transform: skew(-5deg,-5deg); /* Safari and Chrome */
+	-o-transform: skew(-5deg,-5deg); /* Opera */
+	-moz-transform: skew(-5deg,-5deg); /* Firefox */
+}
